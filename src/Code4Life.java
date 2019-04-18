@@ -11,16 +11,25 @@ import javax.swing.JOptionPane;
 
 
 public class Code4Life {
-	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 	//1.  Ask the user how many hours they spent coding this week.
 	String code=JOptionPane.showInputDialog("How many hours have you spent coding this week");
 	//2.  If it is less than or equal to 2, tell them to stop watching YouTube and write code instead.
-	if(code.equals(""))
+	int life=Integer.parseInt(code);
+	if(life<=2) {
+		JOptionPane.showMessageDialog(null,"Get off the coach and stop watching YouTube and instead write more code");
+	}
 	
 	//3.  If it is greater than or equal to 3 AND less than or equal to 5, tell them they're a Code Ninja 
-	
+	else if(life<=5) {
+		JOptionPane.showMessageDialog(null,"You are a code ninja, but don't stop coding");
+	}
 	//4.  If it is more than 5, call the method below to play the Batman theme song.  
-
+	else if(life>5) {
+		playBatmanTheme();
+	}
+	}
     private static void playBatmanTheme() {
     	try {
    		 Clip clip = AudioSystem.getClip();
