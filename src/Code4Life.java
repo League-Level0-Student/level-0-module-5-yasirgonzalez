@@ -18,7 +18,7 @@ public class Code4Life {
 	//2.  If it is less than or equal to 2, tell them to stop watching YouTube and write code instead.
 	int life=Integer.parseInt(code);
 	if(life<=2) {
-		JOptionPane.showMessageDialog(null,"Get off the coach and stop watching YouTube and instead write more code");
+		JOptionPane.showMessageDialog(null,"Get off the coach and stop watching YouTube/hulu/netfilx/etc. and instead write more code");
 	}
 	
 	//3.  If it is greater than or equal to 3 AND less than or equal to 5, tell them they're a Code Ninja 
